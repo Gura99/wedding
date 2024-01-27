@@ -1,0 +1,494 @@
+@import url('https://fonts.cdnfonts.com/css/wedding');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fffefe;
+    background-color:rgb(211, 236, 220);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    transition: width 2s, height 4s;
+}
+section{
+    margin: 2.3rem;   
+}
+
+
+/* song */
+.mainlogo{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: end;
+   
+}
+#logo {
+    cursor: pointer;
+    position: fixed;
+    border-radius: 100px;
+    margin: 5px; 
+    top: 450px;
+    right: 1px; 
+    width: 50px;  
+    height: auto; 
+    z-index: 1;
+}
+#audio-player {
+    display:none;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+/* -----------NAVBAR--------------- */
+
+/* #navbarNavAltMarkup .a:hover{
+    background-color: #000000;
+} */
+.navbar-nav {
+    text-align: center;
+}
+.ms-auto {
+    margin-left: auto!important;
+}
+.mb-2 {
+    margin-bottom: 0.5rem!important;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ol, ul {
+    padding-left: 2rem;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #fff;
+}
+/* ---------------SLIDE--------------- */
+.carousel-inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.d-block {
+    height: 100vh;
+}
+.carousel-inner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+.carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+}
+.carousel-caption{
+    z-index: 2;
+    top: 40%;
+}
+
+@media only screen and (max-width: 767px){
+.carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: auto;
+}
+.carousel-caption h5{
+    font-size: 2rem;
+}
+.carousel-caption  .mt-3{
+  width: 70%;
+   
+}
+#countdown {
+    font-size: 1em;
+    margin-top: 50px;
+    color: #555;
+    /* letter-spacing: 20px; */
+  
+}
+}
+
+/* ---------------SECTION ONE----------------- */
+.row .image{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.about .container .row .col-12 .about-text p{
+    text-align: center;
+}
+/* about img */
+.about .container .row .col-12 .img-fluid{
+    border-radius: 100px;
+}
+.row {
+    color: #000;
+}
+
+.about{
+    
+    color:black;
+}
+.about h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* ----------SERVICES+ PROJECT---------- */
+
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    
+ /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)); */
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+    background-color: #c3eae0;
+    text-align: center;
+    box-shadow: #4caf50;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    border-radius: 40px;
+    transition: background 0.3s, transform 0.5s;
+}
+
+#services .container .services-list.direction{
+    color: white;
+}
+#services p{
+color: black;
+}
+#services a{
+    color:white;
+}
+#services img{
+    border-radius: 40px;
+    width: 100%;
+    justify-content: start;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #000000;
+    
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* .services-list div:hover {
+    background: #ff0055;
+    transform: translateY(-10px);
+} */
+
+/* ------CONTACT US----- */
+h2{
+    font-family: 'Wedding', sans-serif;
+}
+.contact-left {
+    flex-basis: 50%;
+}
+.col-12 p i {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff9f9;
+    display: inline-block;
+    transition: color 0.5s, transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block
+}
+.btn.btn3 {
+    background-color: rgb(242, 207, 130);
+    margin-top: 10px;
+    transition: background 0.5;
+}
+.btn.btn3:hover {
+    background: #ff004f;
+    margin-top:10px;
+    border-radius: 30px;
+}
+.col-12 form {
+    width: 100%;
+}
+form input,form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: rgb(242, 207, 130);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 30px;
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+   
+}
+.copyright img{
+    width:100%;
+    height: 100%;
+   
+}
+.copyright h2{
+    font-weight: 300px;
+    margin-top: 20px;
+    color: #000;
+}
+.copyright i {
+    color: #ff004f;
+    transition: color 0.5s;
+}
+
+.copyright i:hover {
+    color: #fff;
+}
+.col{
+    border-radius: solid;  
+}
+/* ---------OUR PROJECT----------- */
+
+@media only screen and (min-width: 768px){
+.card {
+    margin-bottom: 30px;
+}
+.text-light {
+    color: #000000;
+}
+.text-center {
+    text-align: center;
+}
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+}
+@media only screen and (max-width: 768px){
+.text-warning{
+    margin-top: 20px;
+}
+}
+/* ------CARD----------- */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #000000;
+    background-clip: border-box;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 0.25rem;
+}
+
+.card-body .img-fluid:hover{
+    position: relative;
+    border-radius: 1rem;
+}
+.card-body:hover{
+    transition: 0.7s;
+    transform: scale(0.9);
+}
+/* button */
+
+button{
+    border:none;
+    outline: none;
+    padding:0 30px 15px 30px;
+    background-color: chocolate;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* wish */
+/* section {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    overflow: hidden;
+} */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.btn4 {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#wishesSection {
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+#wishes {
+    padding: 8px;
+}
+
+.wishMessage {
+    margin-bottom: 8px;
+}
+
+.list button{
+    color:red;
+}
+#wishesSection  {
+    margin-top: 20px;
+   
+}
+
+#wishes {
+    text-align: left;
+}
+
+.wishMessage {
+    margin-bottom: 10px;
+}
+.wish input{
+    border-radius: 15PX;
+}
+
+#countdown {
+    font-size: 1.5em;
+    margin-top: 50px;
+    color: #555;
+    /* letter-spacing: 20px; */
+  
+}
+hr {
+    border: none;
+    background: linear-gradient(to right, #070707, #000000, #b2b2b2);
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+}
